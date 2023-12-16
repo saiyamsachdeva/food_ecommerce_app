@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
               ],
             ),
             SizedBox(
-              height: 20.0,
+              height: 5.0,
             ),
             Text(
               "Delicious Food",
@@ -54,14 +54,14 @@ class _HomeState extends State<Home> {
               style: AppWidget.LightTextFieldStyle(),
             ),
             SizedBox(
-              height: 20.0,
+              height: 5.0,
             ),
             Container(
               margin: EdgeInsets.only(right: 20.0),
               child: showItem(),
             ),
             SizedBox(
-              height: 30.0,
+              height: 5.0,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -79,8 +79,8 @@ class _HomeState extends State<Home> {
                           children: [
                             Image.asset(
                               "images/salad2.png",
-                              height: 150,
-                              width: 150,
+                              height: 130,
+                              width: 120,
                               fit: BoxFit.cover,
                             ),
                             Text(
@@ -88,14 +88,14 @@ class _HomeState extends State<Home> {
                               style: AppWidget.semiBooldTextFieldStyle(),
                             ),
                             SizedBox(
-                              height: 5.0,
+                              height: 2.0,
                             ),
                             Text(
                               "Fresh and Healthy",
                               style: AppWidget.LightTextFieldStyle(),
                             ),
                             SizedBox(
-                              height: 5.0,
+                              height: 2.0,
                             ),
                             Text(
                               "\$25",
@@ -121,8 +121,8 @@ class _HomeState extends State<Home> {
                           children: [
                             Image.asset(
                               "images/salad2.png",
-                              height: 150,
-                              width: 150,
+                              height: 130,
+                              width: 120,
                               fit: BoxFit.cover,
                             ),
                             Text(
@@ -130,14 +130,14 @@ class _HomeState extends State<Home> {
                               style: AppWidget.semiBooldTextFieldStyle(),
                             ),
                             SizedBox(
-                              height: 5.0,
+                              height: 3.0,
                             ),
                             Text(
                               "Spicy and Onion",
                               style: AppWidget.LightTextFieldStyle(),
                             ),
                             SizedBox(
-                              height: 5.0,
+                              height: 3.0,
                             ),
                             Text(
                               "\$28",
@@ -150,7 +150,62 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
-            )
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              margin: EdgeInsets.only(right: 10.0),
+              child: Material(
+                elevation: 5.0,
+                borderRadius: BorderRadiusDirectional.circular(30.0),
+                child: Container(
+                  padding: EdgeInsets.all(5),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        "images/salad2.png",
+                        height: 120,
+                        width: 120,
+                        fit: BoxFit.cover,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Column(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width / 2,
+                            child: Text(
+                              "Mediterranean ChickPea Salad",
+                              style: AppWidget.semiBooldTextFieldStyle(),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5.0,
+                          ),
+                          Container(
+                            width: MediaQuery.of(context).size.width / 2,
+                            child: Text(
+                              "Honey goot cheese",
+                              style: AppWidget.LightTextFieldStyle(),
+                            ),
+                          ),
+                          Container(
+                            width: MediaQuery.of(context).size.width / 2,
+                            child: Text(
+                              "\$28",
+                              style: AppWidget.semiBooldTextFieldStyle(),
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
