@@ -27,7 +27,7 @@ class AppWidget {
     );
   }
 
-  static TextStyle semiBooldTextFieldStyle(){
+  static TextStyle semiBoldTextFieldStyle(){
     return TextStyle(
       color: Colors.black87,
       fontSize: 18.0,
