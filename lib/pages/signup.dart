@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:food_ecommerce_app/pages/signup.dart';
+import 'package:food_ecommerce_app/pages/login.dart';
 import 'package:food_ecommerce_app/widget/widget_support.dart';
 
-class LogIn extends StatefulWidget {
-  const LogIn({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  State<LogIn> createState() => _LogInState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _LogInState extends State<LogIn> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,8 +69,17 @@ class _LogInState extends State<LogIn> {
                             height: 20.0,
                           ),
                           Text(
-                            "LogIn",
+                            "SignUp",
                             style: AppWidget.HeadlineTextFieldStyle(),
+                          ),
+                          SizedBox(
+                            height: 20.0,
+                          ),
+                          TextField(
+                            decoration: InputDecoration(
+                                hintText: 'Name',
+                                hintStyle: AppWidget.semiBoldTextFieldStyle(),
+                                prefixIcon: Icon(Icons.person_2_outlined)),
                           ),
                           SizedBox(
                             height: 20.0,
@@ -91,16 +100,7 @@ class _LogInState extends State<LogIn> {
                                 hintStyle: AppWidget.semiBoldTextFieldStyle(),
                                 prefixIcon: Icon(Icons.password_outlined)),
                           ),
-                          SizedBox(
-                            height: 20.0,
-                          ),
-                          Container(
-                            alignment: Alignment.topRight,
-                            child: Text(
-                              "Forgot Password?",
-                              style: AppWidget.semiBoldTextFieldStyle(),
-                            ),
-                          ),
+                          
                           SizedBox(
                             height: 70.0,
                           ),
@@ -115,7 +115,7 @@ class _LogInState extends State<LogIn> {
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 child: Text(
-                                  "LOGIN",
+                                  "Sign UP",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 15.0,
@@ -132,10 +132,10 @@ class _LogInState extends State<LogIn> {
                   SizedBox(height: 50.0,),
                   GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUp()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> LogIn()));
                     },
                     child: Text(
-                      "Don't have an account? Signup",
+                      "Already have an account? Login",
                       style: AppWidget.semiBoldTextFieldStyle(),
                     ),
                   ),
@@ -146,5 +146,6 @@ class _LogInState extends State<LogIn> {
         ),
       ),
     );
+
   }
 }
