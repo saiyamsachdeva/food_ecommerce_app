@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_ecommerce_app/pages/bottom_nav.dart';
 import 'package:food_ecommerce_app/pages/home.dart';
 import 'package:food_ecommerce_app/pages/login.dart';
+import 'package:food_ecommerce_app/pages/onboard.dart';
 import 'package:food_ecommerce_app/pages/signup.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SignUp()
+      home: Onboard()
     );
   }
 }

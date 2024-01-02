@@ -8,7 +8,7 @@ class UnboardingContent {
 
 List<UnboardingContent> contents = [
   UnboardingContent(
-    description: 'Pick you food from our menu\n   More than 35 times',
+    description: 'Pick you food from our menu\n      More than 35 times',
     image: "images/screen1.png",
     title: 'Select from Our\n    Best Menu',
   ),
@@ -19,7 +19,7 @@ List<UnboardingContent> contents = [
     title: 'Easy and Online Payment',
   ),
   UnboardingContent(
-    description: 'Deliver your food at your\n     Doorstep',
+    description: 'Deliver your food at \n     your Doorstep',
     image: "images/screen3.png",
     title: 'Quick Delivery at Your Doorstep',
   ),
